@@ -50,4 +50,9 @@ public class ProductsController {
         return this.productService.getAll(pageNo, pageSize);
     }
 
+    @GetMapping("/getAllDesc")
+    public DataResult<List<Product>> getAllSorted() {
+        return productService.getAllSorted();
+    }
+
 }
