@@ -34,7 +34,7 @@ public class Product {
     private String quantityPerUnit;
 
     @ManyToOne
-    @JoinColumn(name = "categry_id")
+    @JoinColumn(name = "category_id")
     private Category category;
 
 }
